@@ -441,20 +441,23 @@ a {
 
 .sd-img {
     animation: sd-opci 3s infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     animation-timing-function: linear;
     height: 360px;
     width: 375px;
     margin-bottom: 75px;
 }
+
 @keyframes sd-opci {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0.3;
     }
 }
+
 .ws-scan-wapper {
     margin: 0 18vw;
 }
@@ -515,6 +518,7 @@ a {
 }
 
 .sn-list-clo1 {
+    width: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -528,12 +532,125 @@ a {
     background: linear-gradient(to bottom, #00f0ff, #008bff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: change-text1 12s linear infinite;
+    animation-delay: 4s;
 }
 
-.sn-list-clo1 p {
+@keyframes change-text1 {
+    32% {
+        font-size: 18px;
+        font-family: "AdobeHeitiStd-Regular";
+        background: linear-gradient(to bottom, #00f0ff, #008bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    33% {
+        font-size: 15px;
+        font-family: "AdobeHeitiStd-Regular";
+        margin: 0 auto;
+        background: none;
+        -webkit-text-fill-color: white;
+    }
+
+    99% {
+        font-size: 15px;
+        font-family: "AdobeHeitiStd-Regular";
+        margin: 0 auto;
+        background: none;
+        -webkit-text-fill-color: white;
+    }
+
+    100% {
+        font-size: 18px;
+        font-family: "AdobeHeitiStd-Regular";
+        background: linear-gradient(to bottom, #00f0ff, #008bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+.sn-list-clo1 p:nth-child(2) {
     font-size: 15px;
     font-family: "AdobeHeitiStd-Regular";
     margin: 0 auto;
+    animation: change-text2 12s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes change-text2 {
+    32% {
+        font-size: 15px;
+        font-family: "AdobeHeitiStd-Regular";
+        margin: 0 auto;
+        background: none;
+        -webkit-text-fill-color: white;
+    }
+
+    33% {
+        font-size: 18px;
+        font-family: "AdobeHeitiStd-Regular";
+        background: linear-gradient(to bottom, #00f0ff, #008bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    65% {
+        font-size: 18px;
+        font-family: "AdobeHeitiStd-Regular";
+        background: linear-gradient(to bottom, #00f0ff, #008bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    66% {
+        font-size: 15px;
+        font-family: "AdobeHeitiStd-Regular";
+        margin: 0 auto;
+        background: none;
+        -webkit-text-fill-color: white;
+    }
+}
+.sn-list-clo1 p:nth-child(3) {
+    font-size: 15px;
+    font-family: "AdobeHeitiStd-Regular";
+    margin: 0 auto;
+    animation: change-text3 12s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes change-text3 {
+    65% {
+        font-size: 15px;
+        font-family: "AdobeHeitiStd-Regular";
+        margin: 0 auto;
+        background: none;
+        -webkit-text-fill-color: white;
+    }
+
+    66% {
+        font-size: 18px;
+        font-family: "AdobeHeitiStd-Regular";
+        background: linear-gradient(to bottom, #00f0ff, #008bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    99% {
+        font-size: 18px;
+        font-family: "AdobeHeitiStd-Regular";
+        background: linear-gradient(to bottom, #00f0ff, #008bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        font-size: 15px;
+        font-family: "AdobeHeitiStd-Regular";
+        margin: 0 auto;
+        background: none;
+        -webkit-text-fill-color: white;
+    }
 }
 
 .sn-list-clo2 {
@@ -545,12 +662,108 @@ a {
 .img-4 {
     height: 38px;
     width: 38px;
+    background-image: url("./img/4.png");
+    background-size: 100% 100%;
+    animation: change-4 12s linear infinite;
+    animation-delay: 4s;
 }
 
-.img-5,
+@keyframes change-4 {
+    32% {
+        height: 38px;
+    width: 38px;
+    background-image: url("./img/4.png");
+    }
+
+    33% {
+        height: 23px;
+        width: 23px;
+        background-image: url("./img/5.png");
+    }
+
+    99% {
+        height: 23px;
+        width: 23px;
+        background-image: url("./img/5.png");
+    }
+
+    100% {
+        height: 38px;
+    width: 38px;
+    background-image: url("./img/4.png");
+    }
+  
+}
+
+.img-5 {
+    height: 23px;
+    width: 23px;
+    background-image: url("./img/5.png");
+    background-size: 100% 100%;
+    animation: change-5 12s linear infinite;
+    animation-delay: 4s;
+}
+
+
+@keyframes change-5 {
+    32% {
+        height: 23px;
+        width: 23px;
+        background-image: url("./img/5.png");
+    }
+
+    33% {
+        height: 38px;
+        width: 38px;
+        background-image: url("./img/4.png");
+    }
+
+    65% {
+        height: 38px;
+        width: 38px;
+        background-image: url("./img/4.png");
+    }
+
+    66% {
+        height: 23px;
+        width: 23px;
+        background-image: url("./img/5.png");
+    }
+}
+
 .img-6 {
     height: 23px;
     width: 23px;
+    background-image: url("./img/6.png");
+    background-size: 100% 100%;
+    animation: change-6 12s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes change-6 {
+    65% {
+        height: 23px;
+        width: 23px;
+        background-image: url("./img/6.png");
+    }
+
+    66% {
+        height: 38px;
+        width: 38px;
+        background-image: url("./img/4.png");
+    }
+
+    99% {
+        height: 38px;
+        width: 38px;
+        background-image: url("./img/4.png");
+    }
+
+    100% {
+        height: 23px;
+        width: 23px;
+        background-image: url("./img/6.png");
+    }
 }
 
 .sn-line {
@@ -559,33 +772,26 @@ a {
     border: 1px solid white;
     opacity: 0.6;
 }
+
 .sn-list-text-wapper {
     overflow: hidden;
     height: 210px;
 }
+
 .sn-list-text {
     position: relative;
     font-size: 14px;
     font-family: "PingFangSC-Light";
     white-space: nowrap;
     height: auto;
-    animation: ani-scroll 8s infinite;
-    animation-timing-function: linear;
+    transition: all 0.8s linear;
+    top: 0;
 }
-@keyframes ani-scroll {
-    0% {
-        top:0;
-    }
-    50% {
-        top:-210px;
-    }
-    100% {
-        top:-420px;
-    }
-}
-.sn-list-text  li{
+
+.sn-list-text li {
     margin-bottom: 13px;
 }
+
 .ws-sp-wapper {
     margin: 50px 18vw 0 18vw;
 }
